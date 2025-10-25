@@ -1,43 +1,32 @@
 title: "HackScale Blog"
-description: "Cybersecurity tutorials, red teaming, and ethical hacking writeups."
-email: "your-email@example.com"
+description: "Cybersecurity tutorials, writeups, and hands-on labs"
 url: "https://hackscaleblog.github.io"
-baseurl: ""   # must stay empty
+baseurl: ""
+theme: null
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
+# Only safe plugins allowed by GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-paginate: 6
-timezone: UTC
-minimal_mistakes_skin: "dark"
-
 author:
   name: "HackScale"
-  bio: "Exploring ethical hacking and cybersecurity one post at a time."
-  avatar: "/assets/images/hero.jpg"
+  bio: "Ethical hacking & red teaming tutorials"
+  email: "hackscale@gmail.com"
 
-# Navigation bar
+paginate: 6
+timezone: UTC
+
+# Navigation links
 nav:
-  - title: "Home"
+  - title: Home
     url: /
-  - title: "Tutorials"
+  - title: Tutorials
     url: /categories/tutorial/
-  - title: "Writeups"
+  - title: Writeups
     url: /categories/writeup/
-  - title: "About"
+  - title: About
     url: /about/
-
-# Social links
-social:
-  - title: "GitHub"
-    url: "https://github.com/hackscaleblog"
-  - title: "YouTube"
-    url: "https://youtube.com/@hack_skill"
-
-permalink: /:categories/:year/:month/:day/:title/
 
 exclude:
   - README.md
