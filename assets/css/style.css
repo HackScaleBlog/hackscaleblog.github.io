@@ -1,0 +1,48 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.site-header, .site-footer {
+  background: #161b22;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.site-title {
+  color: #58a6ff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.hero {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posts li {
+  margin: 10px 0;
+}
+
+.posts a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.posts a:hover {
+  text-decoration: underline;
+}
