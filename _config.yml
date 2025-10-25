@@ -1,34 +1,40 @@
 title: "HackScale Blog"
-description: "Cybersecurity tutorials, writeups, and hands-on labs"
+description: "Cybersecurity tutorials, red teaming, and ethical hacking writeups."
+theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 url: "https://hackscaleblog.github.io"
 baseurl: ""
-theme: null
 
-# Only safe plugins allowed by GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/page:num/"
 
 author:
   name: "HackScale"
-  bio: "Ethical hacking & red teaming tutorials"
-  email: "hackscale@gmail.com"
+  avatar: "/assets/images/avatar.png"
+  bio: "Cybersecurity researcher sharing tutorials & writeups."
+  location: "Internet"
+  links:
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://youtube.com/@Hack_Skill"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/HackScaleTeam"
 
-paginate: 6
-timezone: UTC
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
 
-# Navigation links
-nav:
-  - title: Home
-    url: /
-  - title: Tutorials
-    url: /categories/tutorial/
-  - title: Writeups
-    url: /categories/writeup/
-  - title: About
-    url: /about/
-
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+collections:
+  posts:
+    output: true
