@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+      </div>
+    </header>
+
+    <main class="page-content container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© {{ site.time | date: "%Y" }} {{ site.title }} — Powered by Jekyll</p>
+      </div>
+    </footer>
+  </body>
+</html>
