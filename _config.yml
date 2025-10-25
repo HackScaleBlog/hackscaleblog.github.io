@@ -1,0 +1,45 @@
+title: "HackScale Blog"
+description: "Cybersecurity tutorials, red teaming, and ethical hacking writeups."
+email: "your-email@example.com"
+url: "https://hackscaleblog.github.io"
+baseurl: ""   # must stay empty
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 6
+timezone: UTC
+minimal_mistakes_skin: "dark"
+
+author:
+  name: "HackScale"
+  bio: "Exploring ethical hacking and cybersecurity one post at a time."
+  avatar: "/assets/images/hero.jpg"
+
+# Navigation bar
+nav:
+  - title: "Home"
+    url: /
+  - title: "Tutorials"
+    url: /categories/tutorial/
+  - title: "Writeups"
+    url: /categories/writeup/
+  - title: "About"
+    url: /about/
+
+# Social links
+social:
+  - title: "GitHub"
+    url: "https://github.com/hackscaleblog"
+  - title: "YouTube"
+    url: "https://youtube.com/@hack_skill"
+
+permalink: /:categories/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
